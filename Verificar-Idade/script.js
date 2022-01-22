@@ -5,6 +5,7 @@ function Verificar() {
     var anodeNascimento = Number(document.getElementById('anoNascimento').value) //Input do ano de nascimento
     var idadedoUsuario = (anoAtual - anodeNascimento) //Cálculo da Idade (Ano atual - Ano de Nascimento)
     var sexodoUsuario = document.querySelector('input[name="sexo"]:checked').value //Input radio 
+    var fotoIdade = document.createElement('img') //Criando a imagem
     var mostrarIdade = document.getElementById('mostrarIdade') //Caixa do resultado
 
     if (anodeNascimento == "" || anodeNascimento > anoAtual) {
@@ -15,32 +16,33 @@ function Verificar() {
 
         if (sexodoUsuario == "Homem") {  //Condição para o sexo masculino
             if (idadedoUsuario >= 0 && idadedoUsuario < 10) {
-                mostrarIdade.innerHTML += '<img src="img/foto-bebe-m.png">' //Bebê do sexo masculino
+                fotoIdade.src = "img/foto-bebe-m.png" //Bebe do sexo masculino
             }
             else if (idadedoUsuario < 21) {
-                mostrarIdade.innerHTML += '<img src="img/foto-jovem-m.png">' //Jovem do sexo masculino
+                fotoIdade.src = "img/foto-jovem-m.png" //Jovem do sexo masculino
             }
             else if (idadedoUsuario < 50) {
-                mostrarIdade.innerHTML += '<img src="img/foto-adulto-m.png">' //Adulto do sexo masculino
+                fotoIdade.src = "img/foto-adulto-m.png" //Adulto do sexo masculino
             }
             else {
-                mostrarIdade.innerHTML += '<img src="img/foto-idoso-m.png">' //Idoso do sexo masculino
+                fotoIdade.src = "img/foto-idoso-m.png" //Idoso do sexo masculino
             }
         } 
         else {
             if (idadedoUsuario >= 0 && idadedoUsuario < 10) {
-                mostrarIdade.innerHTML += '<img src="img/foto-bebe-f.png">' //Bebê do sexo feminino
+                fotoIdade.src = "img/foto-bebe-f.png"  //Bebê do sexo feminino
             }
             else if (idadedoUsuario < 21) {
-                mostrarIdade.innerHTML += '<img src="img/foto-jovem-f.png">' //Jovem do sexo feminino
+                fotoIdade.src = "img/foto-jovem-f.png"  //Jovem do sexo feminino
             }
             else if (idadedoUsuario < 50) {
-                mostrarIdade.innerHTML += '<img src="img/foto-adulto-f.png">' //Adulto do sexo feminino
+                fotoIdade.src = "img/foto-adulto-f.png"  //Adulto do sexo feminino
             }
             else {
-                mostrarIdade.innerHTML += '<img src="img/foto-idoso-f.png">' //Idoso do sexo feminino
+                fotoIdade.src = "img/foto-idoso-f.png"  //Idoso do sexo feminino
             }
         }
+        mostrarIdade.appendChild(fotoIdade)
     }
 }
 
