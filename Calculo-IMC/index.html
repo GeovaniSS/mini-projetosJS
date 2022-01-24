@@ -21,12 +21,13 @@
                 </div>
                 <div class="Altura">
                     <label for="altura">Altura: (ex: 1,60)</label> 
-                    <input type="number" name="" id="altura">
+                    <input type="number" id="altura">
                 </div>
             </div>
 
             <div class="button">
                 <input type="button" value="Verificar" id="button">
+                <input type="button" value="Limpar" id="button-limpar">
             </div>
         </div>
 
@@ -43,36 +44,31 @@
                         <td>CLASSIFICAÇÃO</td>
                         <td>OBESIDADE (GRAU)</td>
                     </tr>
-                </tbody>
-                <tbody>
+             
                     <tr id="table-calc-0">
                         <td>MENOR QUE 18,5</td>
                         <td>MAGREZA</td>
                         <td class="grau">0</td>
                     </tr>
-                </tbody>
-                <tbody>
+             
                     <tr id="table-calc-1">
                         <td>ENTRE 18,5 E 24,9</td>
                         <td>NORMAL</td>
                         <td class="grau">0</td>
                     </tr>
-                </tbody>
-                <tbody>
+            
                     <tr id="table-calc-2">
                         <td>ENTRE 25,0 E 29,9</td>
                         <td>SOBREPESO</td>
                         <td class="grau">I</td>
                     </tr>
-                </tbody>
-                <tbody>
+              
                     <tr id="table-calc-3">
                         <td>ENTRE 30,0 E 39,9</td>
                         <td>OBESIDADE</td>
                         <td class="grau">II</td>
                     </tr>
-                </tbody>
-                <tbody>
+
                     <tr id="table-calc-4">
                         <td>MAIOR QUE 40</td>
                         <td>OBESIDADE GRAVE</td>
@@ -83,7 +79,7 @@
 
             <div id="resultadoIMC">
                 <span>SEU IMC:</span>
-                <strong id="IMC">29,9</strong>
+                <strong id="IMC"></strong>
             </div>
         </div>
     </section>

@@ -33,6 +33,7 @@ section {
 
 div.Calcular {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -77,13 +78,20 @@ div#mostrarIMC {
 }
 
 input[type="button"] {
+    margin: 0 5px;
     width: 8rem;
     height: 2rem;
+    line-height: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 16px;
     margin-bottom: 1rem;
     background-color: #1f5eaf;
     color: #fff;
-    font-size: 1.2rem;
+}
+
+input#button-limpar {
+    background-color: #fc7f19;
+    border: 1px solid #fc7f19;
 }
 
 section img{
@@ -109,6 +117,7 @@ div#mostrarIMC > h5 {
 table {
     width: 100%;
     border-collapse: collapse;
+    border-spacing: 0;
 }
 
 table thead {
@@ -134,9 +143,12 @@ table tbody .table-blue {
     font-weight: bold;
 }
 
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
 table tbody td {
     padding: 8px 20px;
-    border-bottom: 1px solid #ccc;
 }
 
 table tbody td.grau {
@@ -145,7 +157,9 @@ table tbody td.grau {
 
 
 div#resultadoIMC {
-    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
     align-self: flex-start;
     background-color: #1f5eaf;
     padding: 10px 20px;
@@ -153,8 +167,6 @@ div#resultadoIMC {
     width: 200px;
     height: 80px;
     border-radius: 16px;
-    display: none;
-    flex-direction: column;
 }
 
 span {
