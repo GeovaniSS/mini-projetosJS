@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(109, 177, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 30px;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.295);
+}
+
+
+div.Calcular {
+    display: flex;
+    gap: 20px;
+}
+
+div.Peso {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+div.Altura {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #1f5eaf;
+}
+
+input {
+    outline: 0;
+    width: 8rem;
+    height: 2rem;
+    padding: 6px 10px;
+    border: 1px solid #1f5eaf;
+    border-radius: 10px;
+}
+
+div#mostrarIMC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="button"] {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    background-color: #1f5eaf;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+section img{
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+div#mostrarIMC > h5 {
+    font-size: 13px;
+    background-color: #1f5eaf;
+    color: #fff;
+    width: 100%;
+    height: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/*============ TABELA =============*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #1f5eaf;
+    color: #fff;
+}
+
+table thead td {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+table tbody {
+    font-size: 13px;
+    font-weight: bold;
+    color: #707070;
+}
+
+table tbody .table-blue {
+    color: #1f5eaf;
+    font-weight: bold;
+}
+
+table tbody td {
+    padding: 8px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody td.grau {
+    text-align: center;
+}
+
+
+div#resultadoIMC {
+    margin-top: 10px;
+    align-self: flex-start;
+    background-color: #1f5eaf;
+    padding: 10px 20px;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    border-radius: 16px;
+    display: none;
+    flex-direction: column;
+}
+
+span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+strong {
+    font-size: 22px;
+    font-weight: bolder;
+}
+/*==========================*/
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #fff;
+}
+
