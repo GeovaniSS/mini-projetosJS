@@ -1,11 +1,19 @@
-var buttonTemp = document.getElementById('button')
-var buttonLimpar = document.getElementById('button-limpar')
-var resultado = document.getElementById('conversão')
+let buttonTemp = document.getElementById('button')
+let buttonLimpar = document.getElementById('button-limpar')
+let resultado = document.getElementById('conversão')
 
 function Converter() {
-    var tempCelsius = Number(document.getElementById('temp_c').value)
-    var tempFahrenheit = tempCelsius * 1.8 + 32
-    resultado.innerHTML = `<strong>${tempCelsius}°C</strong> é igual a <strong>${tempFahrenheit}°F</strong>`    
+    let tempCelsius = document.getElementById('temp_c')
+
+    if (tempCelsius.value === '') {
+        window.alert("[ERRO] Informe a temperatura em °C")
+    }
+    else {
+        C = Number(tempCelsius.value)
+        F = C * 1.8 + 32
+
+        resultado.innerHTML = `<strong>${C}°C</strong> é igual a <strong>${F}°F</strong>`  
+    }
 }
 
 function Limpar() {

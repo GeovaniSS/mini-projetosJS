@@ -23,6 +23,7 @@ header h1 {
 section {
     background-color: #fff;
     width: 28%;
+    height: 12em;
     margin: 0 auto;
     border-radius: 10px; 
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.295);
@@ -70,9 +71,10 @@ input[type="button"]:hover {
 }
 
 div#conversão {
-    margin-top: 10px;
+    margin: 20px 0px; 
     font-size: 20px;
     text-align: center;
+    background-color: rgb(190, 216, 255);
 }
 
 strong {
