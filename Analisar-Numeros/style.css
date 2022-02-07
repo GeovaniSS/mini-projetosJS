@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(109, 177, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 30px;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    max-width: 42%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.295);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+label {
+    font-size: 18px;
+}
+
+input {
+    outline: 0;
+    height: 1.5rem;
+    width: 10rem;
+}
+
+div#adicionar-numero{
+    display: flex;
+    flex-direction: row; 
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+div#resultado {
+    margin-top: 10px;
+}
+
+div#armazenar-numero {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-size: 20px;
+}
+
+input[type="button"] {
+    border-radius: 8px;
+    width: 5rem;
+    border: 2px solid #ccc;
+}
+
+select {
+    margin: 20px 0;
+    outline: 0;
+}
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #fff;
+}
