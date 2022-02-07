@@ -1,12 +1,12 @@
-var recarregarPagina = document.getElementsByTagName('body')
+const recarregarPagina = document.getElementsByTagName('body')
 
-function Carregar() {
-    var informarHora = document.getElementById('horas')
-    var foto = document.createElement('img')
-    var fotoHora = document.getElementById('foto')
-    var mensagemdoDia = document.getElementById('msg')
-    var hora = new Date().getHours()
-    var minuto = new Date().getMinutes()
+function carregarHorário() {
+    const mensagemdoDia = document.getElementById('msg') //Título
+    const informarHora = document.getElementById('horas') //Div Horas
+    const fotoHora = document.getElementById('foto') //Div Foto
+    let foto = document.createElement('img') //Criando imagem pelo JavaScript
+    const hora = new Date().getHours()
+    const minuto = new Date().getMinutes()
     
     informarHora.innerHTML = `Agora são ${hora} horas e ${minuto} minutos`
  
@@ -28,7 +28,7 @@ function Carregar() {
     fotoHora.appendChild(foto)
 }
 
-recarregarPagina.addEventListener('load', Carregar())
+recarregarPagina.addEventListener('load', carregarHorário())
 
 
 

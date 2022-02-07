@@ -1,14 +1,14 @@
-var verificarIMC = document.getElementById('button') //Botão
-var limparIMC = document.getElementById('button-limpar') //Botão Limpar
+const verificar = document.getElementById('button') //Botão
+const limpar = document.getElementById('button-limpar') //Botão Limpar
 
-function mostrarIMC() {
-    var peso = document.getElementById('peso').value //Input do peso
-    var altura = document.getElementById('altura').value //Input da altura
-    var IMC = peso/altura**2 //Calculo do IMC
-    var resultadoIMC = document.getElementById('resultadoIMC')
-    var valordoIMC = document.getElementById('IMC')
+function verificarIMC() {
+    const peso = document.getElementById('peso').value //Input do peso
+    const altura = document.getElementById('altura').value //Input da altura
+    let IMC = peso/altura**2 //Calculo do IMC
+    const resultadoIMC = document.getElementById('resultadoIMC')
+    const valordoIMC = document.getElementById('IMC')
 
-    if (peso == '' || altura == '') {
+    if (peso === '' || altura === '') {
         window.alert('[ERRO] Informe o (Peso) e a (Altura)')
     }
     else {
@@ -33,7 +33,7 @@ function mostrarIMC() {
     }
 }
 
-function Limpar() {
+function limparIMC() {
         peso.value = '' //Limpar o input peso
         altura.value = '' //Limpar o input altura
 
@@ -46,5 +46,5 @@ function Limpar() {
         resultadoIMC.style.display = 'none' //Resultado invisível 
 }
 
-verificarIMC.addEventListener('click', mostrarIMC)
-limparIMC.addEventListener('click', Limpar)
+verificar.addEventListener('click', verificarIMC)
+limpar.addEventListener('click', limparIMC)

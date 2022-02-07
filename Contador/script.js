@@ -1,4 +1,4 @@
-let contar = document.getElementById('button')
+const contar = document.getElementById('button')
 
 function Contagem() {
     let inicio = document.getElementById('inicio') //Input inicio
@@ -16,23 +16,24 @@ function Contagem() {
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        if (p <= 0 || p >= f || p >= i) {
+        if (p <= 0)// Verificar a condição do passo ser maior que o inicio ou final
+        {
             window.alert('Passo inválido, considerando PASSO 1')
             p = 1
         }
 
         if (i < f) { //Contagem Progressiva
-            for (c = i; c <= f; c+=p) {
+            for (let c = i; c <= f; c+=p) {
                 resultado.innerHTML += `${c}👉`
             }
         }
 
         else { //Contagem Regressiva
-            for (c = i; c >= f; c-=p) {
+            for (let c = i; c >= f; c-=p) {
                 resultado.innerHTML += `${c}👉`
             }         
         }
         resultado.innerHTML += '🏁'
     }
 }
-contar.addEventListener('click', Contagem)
+contar.addEventListener('click', contagem)

@@ -1,12 +1,12 @@
-var gerarTabuada = document.getElementById('button') //Botão gerar tabuada
-var limparTabuada = document.getElementById('button-limpar') //Botão limpar a tabuada
-var tab = document.getElementById('tabuada')  //Referência do Select
-var msg = document.createElement('option') //Mensagem da Tabuada
+const gerar = document.getElementById('button') //Botão gerar tabuada
+const limpar= document.getElementById('button-limpar') //Botão limpar a tabuada
+const tab = document.getElementById('tabuada')  //Referência do Select
+const msg = document.createElement('option') //Mensagem da Tabuada
 
 msg.innerHTML = 'Digite um número acima'
 tab.appendChild(msg)
 
-function Tabuada() {
+function gerarTabuada() {
     let num = document.getElementById('numero') //Input número
 
     if (num.value === '') {
@@ -25,13 +25,13 @@ function Tabuada() {
     }
 }
 
-function Limpar() {
+function limparTabuada() {
     tab.innerHTML = ''
     msg.innerHTML = 'Digite outro número'
     tab.appendChild(msg)
 }
 
-gerarTabuada.addEventListener('click', Tabuada)
-limparTabuada.addEventListener('click', Limpar)
+gerar.addEventListener('click', gerarTabuada)
+limpar.addEventListener('click', limparTabuada)
 
 //Atributo multiple

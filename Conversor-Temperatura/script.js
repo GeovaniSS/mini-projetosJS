@@ -1,8 +1,8 @@
-let buttonTemp = document.getElementById('button')
-let buttonLimpar = document.getElementById('button-limpar')
-let resultado = document.getElementById('conversão')
+const buttonTemp = document.getElementById('button')
+const buttonLimpar = document.getElementById('button-limpar')
+const resultado = document.getElementById('conversão')
 
-function Converter() {
+function converterTemp() {
     let tempCelsius = document.getElementById('temp_c')
 
     if (tempCelsius.value === '') {
@@ -16,10 +16,10 @@ function Converter() {
     }
 }
 
-function Limpar() {
+function limparTemp() {
     resultado.innerHTML = ''
     document.getElementById('temp_c').value = ''   
 }
 
-buttonTemp.addEventListener('click', Converter)
-buttonLimpar.addEventListener('click', Limpar)
+buttonTemp.addEventListener('click', converterTemp)
+buttonLimpar.addEventListener('click', limparTemp)

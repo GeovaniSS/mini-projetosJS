@@ -1,12 +1,12 @@
-var verificarIdade = document.getElementById('button') //Botão
+const verificar = document.getElementById('button') //Botão
 
-function Verificar() {
-    var anoAtual = new Date().getFullYear()
-    var anodeNascimento = Number(document.getElementById('anoNascimento').value) //Input do ano de nascimento
-    var idadedoUsuario = (anoAtual - anodeNascimento) //Cálculo da Idade (Ano atual - Ano de Nascimento)
-    var sexodoUsuario = document.querySelector('input[name="sexo"]:checked').value //Input radio 
-    var fotoIdade = document.createElement('img') //Criando a imagem
-    var mostrarIdade = document.getElementById('mostrarIdade') //Caixa do resultado
+function verificarIdade() {
+    const anoAtual = new Date().getFullYear()
+    const anodeNascimento = Number(document.getElementById('anoNascimento').value) //Input do ano de nascimento
+    let idadedoUsuario = (anoAtual - anodeNascimento) //Cálculo da Idade (Ano atual - Ano de Nascimento)
+    const sexodoUsuario = document.querySelector('input[name="sexo"]:checked').value //Input radio 
+    let fotoIdade = document.createElement('img') //Criando a imagem
+    const mostrarIdade = document.getElementById('mostrarIdade') //Caixa do resultado
 
     if (anodeNascimento == "" || anodeNascimento > anoAtual) {
         window.alert('[ERRO] Verifique os dados e tente novamente')
@@ -46,5 +46,5 @@ function Verificar() {
     }
 }
 
-verificarIdade.addEventListener('click', Verificar) //Evento
+verificar.addEventListener('click', verificarIdade) //Evento
 
