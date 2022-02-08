@@ -20,7 +20,7 @@ header h1 {
 
 section {
     background-color: #fff;
-    max-width: 42%;
+    max-width: 44%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px; 
@@ -29,9 +29,7 @@ section {
 
 p {
     font-size: 18px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
+    margin: 10px 0;
 }
 
 
@@ -71,6 +69,7 @@ input[type="button"] {
     border-radius: 8px;
     width: 5rem;
     border: 2px solid #ccc;
+    margin: 5px 0;
 }
 
 select {
