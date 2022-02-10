@@ -8,22 +8,27 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: rgb(109, 177, 255);
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 1.6rem;
 }
 
 header h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 3.6rem;
     padding: 30px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 section {
     background-color: #fff;
-    width: 30%;
+    width: 100%;
+    max-width: 550px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px; 
@@ -31,60 +36,49 @@ section {
 }
 
 
-div.Calcular {
+.calcular {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px 20px;
 }
 
-div.Peso {
+.peso, .altura  {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
-div.Altura {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px; 
-}
-
-div.button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 label {
-    font-size: 13px;
+    font-size: 1.8rem;
     font-family: 'Montserrat';
-    color: #1f5eaf;
+    color: #0a4db1;
 }
 
 input {
+    width: 100%;
+    height: 3rem;
+    max-width: 500px;
     outline: 0;
-    width: 8rem;
-    height: 2rem;
     padding: 6px 10px;
     border: 1px solid #1f5eaf;
     border-radius: 10px;
 }
 
-div#mostrarIMC {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 input[type="button"] {
-    margin: 0 5px;
-    width: 8rem;
-    height: 2rem;
-    line-height: 1.2rem;
-    font-size: 1.3rem;
+    margin: 15px 5px;
+    width: 12rem;
+    height: 3rem;
+    line-height: 1rem;
+    font-size: 1.4rem;
     border-radius: 16px;
-    margin-bottom: 1rem;
     background-color: #1f5eaf;
     color: #fff;
 }
@@ -94,12 +88,11 @@ input#button-limpar {
     border: 1px solid #fc7f19;
 }
 
-section img{
-    margin-top: 20px;
-}
-
-label {
-    font-size: 18px;
+div#mostrarIMC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 div#mostrarIMC > h5 {
@@ -121,7 +114,7 @@ table {
 }
 
 table thead {
-    font-size: 13px;
+    font-size: 1.4rem;
     font-weight: bold;
     background-color: #1f5eaf;
     color: #fff;
@@ -129,13 +122,16 @@ table thead {
 
 table thead td {
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 table tbody {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #707070;
+    border-top: 5px solid #fff;
 }
 
 table tbody .table-blue {
@@ -147,6 +143,10 @@ table tbody tr {
     border-bottom: 1px solid #ccc;
 }
 
+table tbody tr.active {
+    background-color: #ebfdea;
+}
+
 table tbody td {
     padding: 8px 20px;
 }
@@ -154,8 +154,7 @@ table tbody td {
 table tbody td.grau {
     text-align: center;
 }
-
-
+    
 div#resultadoIMC {
     display: none;
     flex-direction: column;
@@ -164,8 +163,8 @@ div#resultadoIMC {
     background-color: #1f5eaf;
     padding: 10px 20px;
     color: #fff;
-    width: 200px;
-    height: 80px;
+    width: 20rem;
+    height: 8rem;
     border-radius: 16px;
 }
 
@@ -175,7 +174,7 @@ span {
 }
 
 strong {
-    font-size: 22px;
+    font-size: 3rem;
     font-weight: bolder;
 }
 /*==========================*/
