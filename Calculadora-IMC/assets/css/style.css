@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(109, 177, 255);
+    --primary-color-dark: rgb(20, 126, 247);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.5rem;
+}
+
+header h1 {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+section.container {
+    max-width: 640px;
+    margin: 40px auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+section h1 {
+    margin: 20px 0 30px 0;
+}
+
+section form {
+    width: 100%;
+}
+
+form input, form label, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form input {
+    font-size: 2rem; 
+    height: 35px; 
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form label {
+    font-size: 1.7rem;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="button"] {
+    width: 20%;
+    height: 35px;
+    border: 0;
+    border-radius: 4px;
+    margin: 15px 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #1f5eaf;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    background-color: #1172f1;
+}
+
+form input[type="button"]#limpar {
+    background-color: brown;
+}
+
+form input[type="button"]#limpar:hover {
+    background-color: rgb(212, 54, 54);
+}
+
+form p {
+    color: red;
+    margin-bottom: 25px;
+}
+
+/*============ RESULTADO =============*/
+#result {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #1f5eaf;
+    padding: 10px 20px;
+    color: #fff;
+    width: max-content;
+    height: 8rem;
+    border-radius: 16px;
+}
+
+#result span {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+#result strong {
+    margin-top: 20px;
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+/*============ TABELA =============*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 30px;
+}
+
+table thead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #1f5eaf;
+    color: #fff;
+}
+
+table thead td {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+table tbody {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #707070;
+    border-top: 5px solid #fff;
+}
+
+table tbody .table-blue {
+    color: #1f5eaf;
+    font-weight: bold;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr.active {
+    background-color: #ebfdea;
+}
+
+table tbody td {
+    padding: 8px 20px;
+}
+
+table tbody td.grau {
+    text-align: center;
+}
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    color: #fff;
+}
