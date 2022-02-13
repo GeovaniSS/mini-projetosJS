@@ -65,7 +65,7 @@ form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form input.teste {
+form input.invalidMessage {
     border: 1px solid red;
 }
 
@@ -102,7 +102,7 @@ form p {
 }
 
 /*============ RESULTADO =============*/
-#resultado {
+#result {
     display: none;
     flex-direction: column;
     margin-top: 20px;
@@ -114,7 +114,7 @@ form p {
     border-radius: 16px;
 }
 
-#resultado p {
+#result p {
     font-size: 2.3rem;
     font-weight: bold;
 }
