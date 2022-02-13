@@ -65,6 +65,10 @@ form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
+form input.teste {
+    border: 1px solid red;
+}
+
 form label {
     font-size: 1.7rem;
 }
@@ -74,12 +78,12 @@ form .buttons {
     justify-content: center;
 }
 
-form input[type="button"] {
+form button {
     width: 20%;
     height: 35px;
     border: 0;
     border-radius: 4px;
-    margin: 15px 10px;
+    margin: 15px auto;
     font-size: 1.8rem;
     font-weight: bold;
     background-color: #1f5eaf;
@@ -88,16 +92,8 @@ form input[type="button"] {
     cursor: pointer;
 }
 
-form input[type="button"]:hover {
+form button:hover {
     background-color: #1172f1;
-}
-
-form input[type="button"]#limpar {
-    background-color: brown;
-}
-
-form input[type="button"]#limpar:hover {
-    background-color: rgb(212, 54, 54);
 }
 
 form p {
@@ -106,7 +102,7 @@ form p {
 }
 
 /*============ RESULTADO =============*/
-#result {
+#resultado {
     display: none;
     flex-direction: column;
     margin-top: 20px;
@@ -114,19 +110,13 @@ form p {
     padding: 10px 20px;
     color: #fff;
     width: max-content;
-    height: 8rem;
+    height: 4rem;
     border-radius: 16px;
 }
 
-#result span {
+#resultado p {
     font-size: 2.3rem;
     font-weight: bold;
-}
-
-#result strong {
-    margin-top: 20px;
-    font-size: 2.7rem;
-    font-weight: bolder;
 }
 /*============ TABELA =============*/
 

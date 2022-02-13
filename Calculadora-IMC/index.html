@@ -13,24 +13,20 @@
     </header>
     <section class="container">
         <h1>Calcule seu IMC</h1>
-         <form action="" class="form">
-            <div id="weightText">
-                <label for="weight">Peso: (ex: 72)</label>
-                <input type="text" id="weight">
-            </div>
-             
-            <div id="heightText">
-                <label for="height">Altura: (ex: 1.60)</label>
-                <input type="text" id="height">
-            </div>
+        <form action="" class="form">
+            <label for="peso">Peso: (ex: 72)</label>
+            <input type="text" id="peso">
+            <div class="weightText"></div>
+        
 
-            <div class="buttons">
-                <input type="button" value="Enviar" id="enviar">
-                <input type="button" value="Limpar" id="limpar">
-            </div>
-         </form>
+            <label for="altura">Altura: (ex: 1.60)</label>
+            <input type="text" id="altura">
+            <div class="heightText"></div>
+        
+            <button type="submit">Enviar</button>
+        </form>
 
-         <table>
+        <table>
             <thead>
                 <tr>
                     <td colspan="3">CLASSIFICAÇÃO DO IMC</td>
@@ -42,13 +38,13 @@
                     <td>CLASSIFICAÇÃO</td>
                     <td>OBESIDADE (GRAU)</td>
                 </tr>
-         
+            
                 <tr>
                     <td>MENOR QUE 18,5</td>
                     <td>MAGREZA</td>
                     <td class="grau">0</td>
                 </tr>
-         
+            
                 <tr>
                     <td>ENTRE 18,5 E 24,9</td>
                     <td>NORMAL</td>
@@ -60,7 +56,7 @@
                     <td>SOBREPESO</td>
                     <td class="grau">I</td>
                 </tr>
-          
+            
                 <tr>
                     <td>ENTRE 30,0 E 39,9</td>
                     <td>OBESIDADE</td>
@@ -73,15 +69,15 @@
                     <td class="grau">III</td>
                 </tr>
             </tbody>
-        </table>
+         </table>
 
-        <div id="result">
-            <span>Seu IMC é:</span>
-         </div>
+        <div id="resultado">
+            <p id="imc"></p>
+        </div>
     </section>
     <footer>
         <p>&copy; Geovani Silva</p>
     </footer>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
