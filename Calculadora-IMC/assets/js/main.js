@@ -37,12 +37,14 @@ form.addEventListener('submit', (e) => {
     //Evento que remove a borda vermelha e a mensagem inválida do input Peso
     inputWeight.addEventListener('focus', () =>  {
         inputWeight.classList.remove('invalidMessage')
+        inputWeight.value = ''
         invalidWeightMessage.innerHTML = ''
     })
 
     //Evento que remove a borda vermelha e a mensagem inválida do input Altura
     inputHeight.addEventListener('focus', () => {
         inputHeight.classList.remove('invalidMessage')
+        inputHeight.value = ''
         invalidHeightMessage.innerHTML = ''
     })
 })
