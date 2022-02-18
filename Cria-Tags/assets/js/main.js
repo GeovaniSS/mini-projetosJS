@@ -15,12 +15,12 @@ adicionarElemento(elementos, caixaElementos)
 /*Function que percorre o array de objetos, cria as tags e o conteúdo e adiciona esses elementos a caixaElementos (div) */
 function adicionarElemento(elementos, caixaElementos) {
     for (let i = 0; i < elementos.length; i++) {
-      /*let [{tag, texto}] = elementos[i] //!ERRADO*/
+        /*let [{tag, texto}] = elementos[i] //!ERRADO*/
         let {tag, texto} = elementos[i] //Atribuição via Desestruturação do Objeto
         const elemento = document.createElement(tag)
         const textoCriado = document.createTextNode(texto)
         /*elemento.innerText = texto*/
-        elemento.appendChild(textoCriado)
+        elemento.appendChild(textoCriado) //O texto será adicionado como conteúdo da tag
         caixaElementos.appendChild(elemento)
     }   
 } 
