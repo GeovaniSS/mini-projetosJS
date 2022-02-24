@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(109, 177, 255);
+    --primary-color-dark: rgb(20, 126, 247);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: 'Orbitron';
+    text-align: center;
+    line-height: 5rem;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+section.container {
+    position: relative;
+    max-width: 450px;
+    min-height: 40vh;
+    margin: 20px auto;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+section.container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(66, 121, 238);
+    font-size: 8rem; 
+}
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    color: #fff;
+}
