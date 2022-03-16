@@ -10,34 +10,26 @@ function Calculator() {
   this.handleButtonClick = () => {
     buttons.addEventListener('click', (e) => {
       const el = e.target
-
-      if(el.classList.contains('btn-clear')) this.clearDisplay()
+      if(el.classList.contains('btn-clear'))  this.clearDisplay()
       if(el.classList.contains('btn-number')) this.addNumberToDisplay(el.innerText)
       if(el.classList.contains('btn-delete')) this.removeItem()
-      if(el.classList.contains('btn-equal')) this.showResult()
+      if(el.classList.contains('btn-equal'))  this.showResult()
     })
   } 
-
+  
   this.handlePressEnter = () => {
-    display.addEventListener('keypress', (e) => {
-      if(e.keyCode === 13) {
-        return this.showResult()
-      }
+    document.addEventListener('keyup', (e) => {
+      if(e.keyCode !== 13) return 
+      this.showResult()
     })
   }
-
-  this.clearDisplay = () => {
-    display.value = ''
-  }
-
+  
+  this.clearDisplay = () => display.value = ''
   this.addNumberToDisplay = (number) => {
     display.value += number
+    display.focus()
   }
-
-  this.removeItem = () => {
-    display.value = display.value.slice(0, -1)
-  }
-
+  this.removeItem = () => display.value = display.value.slice(0, -1)
   this.showResult = () => {
     try {
       const result = eval(display.value)
