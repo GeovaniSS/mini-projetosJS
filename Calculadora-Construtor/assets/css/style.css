@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(109, 177, 255);
+    --primary-color-dark: rgb(20, 126, 247);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 5rem;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+section.container h1 {
+    margin: 10px 0;
+}
+
+section.container .display {
+    width: 50%;
+}
+
+section.container .display input {
+    width: 100%;
+    font-size: 30px;
+    text-align: right;
+}
+
+section.container .buttons {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 35px);
+    gap: 5px;
+}
+
+section.container .buttons button {
+    cursor: pointer;
+}
+
+footer p {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    color: #fff;
+}
